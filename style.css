@@ -70,7 +70,9 @@ h5 {
 /* -------------------------Navbar------------------------- */
 
 nav {
-    background: transparent;
+    background: transparent;    
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     width: 100vw;
     height: 5rem;
     position: fixed;
