@@ -5,106 +5,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OG Bullies Club</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/logoweb.png">
+    <title>OG Bullies Club | The Beginning of a new Era</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <link rel="icon" href="assets/logoweb.png">
 </head>
 
 <body>
-
     <nav>
         <div class="container nav__container">
-            <a href="index.html"><img src="./assets/logo.png" alt=""></a>
-            <ul class="nav__menu">
-                <li><a href="#About">About</a></li>
-                <li><a href="#Pedigree">Pedigree</a></li>
-                <li><a href="#Holders-Perk">Perks</a></li>
-                <li><a href="#Roadmap">Roadmap</a></li>
-                <li><a href="#FAQs">FAQs</a></li>
-                <li><a href="#Team">Meet The Team</a></li>
-            </ul>
-            <button id="open-menu-btn"><img src="assets/menu.svg" alt=""></button>
-            <button id="close-menu-btn"><img src="assets/exit.svg" alt=""></button>
-        </div>
+            <div class="logo">
+                <a href="#header"><img src="./assets/logoweb.png" alt=""></a>
+            </div>
+            <div class="title">
+                <a href="#header">
+                    <h3>OG Bullies Club</h3>
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#about">About</a></li>
+                    <li><a class="menu__item" href="#roadmap">Roadmap</a></li>
+                    <li><a class="menu__item" onclick="myFunction2()" href="#casino">Casino</a></li>
+                    <li><a class="menu__item" onclick="myFunction3()" href="#tokenomic">Tokenomic</a></li>
+                    <li><a class="menu__item" onclick="myFunction4()" href="#brand">Brand</a></li>
+                    <li><a class="menu__item" onclick="myFunction5()" href="#ambully">Bully</a></li>
+                    <li><a class="menu__item" onclick="myFunction6()" href="#faqs">FAQs</a></li>
+                    <li>
+                        <div class="socials">
+                            <a href="https://discord.com/invite/ana8F7j2nR"><img src="./assets/Discord.svg" alt=""></a>
+                            <a href="https://twitter.com/Ogbullies_club"><img src="./assets/Twitter.svg" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <header>
+    <header id="header">
         <div class="container header__container">
             <div class="header__left">
-                <h1 class="titlee">OG Bullies Club</h1>
-                <h5>The Biggest American Bully community <br> in the World and on the Blockchain.</h5>
-                <h4>Join us now!</h4>
-                <ul class="socials">
-                    <li>
-                        <a href="https://discord.com/invite/ana8F7j2nR"><img src="./assets/Discord.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/Ogbullies_club"><img src="./assets/Twitter.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ogbullies_club/"><img src="./assets/IG.svg" alt=""></a>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="header__right">
                 <div class="header__right-image">
                     <img src="./assets/header.png" alt="">
                 </div>
-
+            </div>
+            <div class="header__right">
+                <h3>You ain't ready for this.</h3>
+                <h1>The Beginning of a New Era</h1>
+                <a class="joinbtn" href="https://discord.com/invite/ana8F7j2nR">
+                    Join us now!
+                </a>
             </div>
         </div>
-        <a href="#About">
-            <div class="arrow">
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </div>
-        </a>
     </header>
 
-    <section class="home1" id="About">
-        <div class="container home1__container">
-            <div class="home1__left">
-                <h1>Welcome to OG Bullies Club</h1>
-                <div class="who">
-                    <div class="who-title">
-                        <img src="assets/who.svg" alt="">
-                        <h2>Who we are</h2>
-                    </div>
-                    <h5>- OG Bullies Club is a collection of 4,444 unique OG Bullies NFT.<br> - The first Bully community on the Blockchain.</h5>
-                </div>
-                <div class="vision">
-                    <div class="vision-title">
-                        <img src="assets/vision.svg" alt="">
-                        <h2>Our Vision</h2>
-                    </div>
-                    <h5>- Biggest Bully community on the Blockchain. <br> - Hosting the biggest and wildest Bully events wordlwide.</h5>
-                </div>
-                <div class="mission">
-                    <div class="mission-title">
-                        <img src="assets/mission.svg" alt="">
-                        <h2>Our Mission</h2>
-                    </div>
-                    <h5>- Grant holders with Real Life and Metaverse utilities.<br> - Help stop Dog Fighting.</h5>
-                </div>
 
+
+    <section class="foldertag__about">
+        <div class="foldertag foldertag__about__container">
+            <button class="buttontag" onclick="myFunction()"><p>#01 About</p><img src="./assets/tab-grey2.png" alt=""></button>
+        </div>
+    </section>
+
+    <section class="about active" id="about">
+        <div class="container about__container">
+            <div class="about__left">
+                <h2>About</h2>
+                <p>OG Bullies Club is a collection of 3,333 unique NFTs ready to take over the Solana Blockchain with their Online Casino, Tokenomics & Staking Rewards, Merch & Brand establishment, Mutation, and so much more...</p>
+                <a href="https://twitter.com/Ogbullies_club" class="staybtn">Stay Tuned</a>
             </div>
-            <div class="home__right">
-                <img src="./assets/welcome.png" alt="">
+            <div class="about__right">
+                <div class="about__right__images">
+                    <img src="./assets/karl-img.png" alt="">
+                    <img src="./assets/rawad-img.png" alt="">
+                    <img src="./assets/Niovi-img.png" alt="">
+                    <img src="./assets/home-img2.png" alt="">
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="pedigree" id="Pedigree">
-        <div class="container pedigree__container">
-            <div class="pedigree__left">
-                <h1>Next Gen Pedigree</h1>
+
+
+    <section class="foldertag__roadmap">
+        <div class="foldertag foldertag__roadmap__container">
+            <button class="buttontag" onclick="myFunction1()"><img src="./assets/tab-grey1.png" alt=""><p>#02 Roadmap</p></button>
+        </div>
+        <div class="linegrey2">
+
+        </div>
+    </section>
+
+    <section class="roadmap" id="roadmap">
+        <div class="container roadmap__container">
+            <h2>Roadmap</h2>
+            <img src="./assets/roadmap.png" alt="">
+        </div>
+    </section>
+
+
+
+    <section class="foldertag__casino">
+        <div class="foldertag foldertag__casino__container">
+            <button class="buttontag" onclick="myFunction2()"><img src="./assets/tab-grey2.png" alt=""><p>#03 Casino</p></button>
+        </div>
+    </section>
+
+    <section class="casino" id="casino" style="display:none">
+        <div class="container casino__container">
+            <div class="casino__left">
+                <h1>Casino</h1>
+                <p>OG Bullies Club will launch their own professional online casino platform, hosting Sports Bettings, Casino Slots, Live Casino, Poker tournaments and so much more. </p>
+                <p>65% of profit will be distributed to holders and the rest will be split between the community's upcoming projects and special events.</p>
+                <div class="quote">
+                    <h3>"People say they're ready, but we know they're Bluffin'." </h3>
+                    <h3 class="h3-right">~ OG Bullies Club Founding Team</h3>
+                </div>
+                <button class="joinbtn">
+                    <h4>Play (soon)</h4>
+                </button>
+            </div>
+            <div class="casino__right">
+                <img src="./assets/poker.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="foldertag__tokenomic">
+        <div class="foldertag foldertag__tokenomic__container">
+            <button class="buttontag" onclick="myFunction3()"><img src="./assets/tab-grey1.png" alt=""><p>#04 Tokenomic</p></button>
+        </div>
+    </section>
+
+    <section class="tokenomic" id="tokenomic" style="display:none">
+        <div class="container tokenomic__container">
+            <div class="tokenomic__left">
+                <img src="./assets/token.png" alt="">
+            </div>
+            <div class="tokenomic__right">
+                <h2>Tokenomic</h2>
+                <p>OG Bullies Club will launch it's own token $OGB, a whole new ecosystem with a Staking system, Real life value, Raffles and Auctions, and more utilities in the OG Bullies Ecosystem</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="foldertag__brand">
+        <div class="foldertag foldertag__brand__container">
+            <button class="buttontag" onclick="myFunction4()"><img src="./assets/tab-grey2.png" alt=""><p>#05 Brand</p></button>
+        </div>
+    </section>
+
+    <section class="brand" id="brand" style="display:none">
+        <div class="container brand__container">
+            <div class="brand__left">
+                <h2>Brand</h2>
+                <p>OG Bullies Brand will introduce it's brand in a way never seen before on the Blockchain. This will show the level of innovation that this collection will bring to the Solana Blockchain.</p>
+            </div>
+            <div class="brand__right">
+                <img src="./assets/brand.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="foldertag__ambully">
+        <div class="foldertag foldertag__ambully__container">
+            <button class="buttontag" onclick="myFunction5()"><img src="./assets/tab-grey1.png" alt=""><p>#06 Bully</p></button>
+        </div>
+    </section>
+
+    <section class="ambully" id="ambully" style="display:none">
+        <div class="container ambully__container">
+            <div class="ambully__left">
+                <h2>Next Gen Pedigree</h2>
                 <ul>
                     <li>Register Your Bully on the Blockchain.</li>
                     <li>Next Generation of Pedigrees, Kennel Browsing, and Dogs Proof of ownership.</li>
@@ -113,149 +196,23 @@
                     <li>Lock a Stud Through A Smart Contract.</li>
                 </ul>
             </div>
-            <div class="pedigree__right">
-                <img src="assets/pedigree.png" alt="">
+            <div class="ambully__right">
+                <h2>Mission</h2>
+                OG Bullies Club seeks to fight against the dog fighting industry and to help stop bullying the American Bully breed worldwide. In order to accomplish this mission, we will organize events to spread awarness and donate a percentage of the community vault
+                toward American Bully/ Pitbull shelters.
             </div>
         </div>
     </section>
 
-    <section class="holders" id="Holders-Perk">
-        <div class="container holders__container">
-            <div class="holders__left">
-                <img src="assets/holders.png" alt="">
-            </div>
-            <div class="holders__right">
-                <h1>Holders Perks</h1>
-                <ul>
-                    <li>Community Member</li>
-                    <li>NFT Staking</li>
-                    <li>NFT Breeding Season</li>
-                    <li>Custom NFT Merch</li>
-                    <li>Access to Pedigree Feature</li>
-                    <li>Access to Digital Land in Metaverse</li>
-                    <li>Access to Bully Shows Worldwide</li>
-                </ul>
-            </div>
+
+
+    <section class="foldertag__faqs">
+        <div class="foldertag foldertag__faqs__container">
+            <button class="buttontag" onclick="myFunction6()"><img src="./assets/tab-grey2.png" alt=""><p>#07 FAQs</p></button>
         </div>
     </section>
 
-    <section class="roadmap" id="Roadmap">
-        <div class="ag-timeline-block">
-            <div class="ag-timeline_title-box">
-                <div class="ag-timeline_tagline">
-                    <h1>Roadmap</h1>
-                </div>
-                <div class="ag-timeline_title"></div>
-            </div>
-            <section class="ag-section">
-                <div class="ag-format-container">
-                    <div class="js-timeline ag-timeline">
-                        <div class="js-timeline_line ag-timeline_line1"></div>
-                        <div class="js-timeline_line ag-timeline_line">
-                            <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
-                        </div>
-                        <div class="ag-timeline_list">
-                            <div class="js-timeline_item ag-timeline_item">
-                                <div class="ag-timeline-card_box">
-                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                                        <div class="ag-timeline-card_point"></div>
-                                    </div>
-                                    <div class="ag-timeline-card_meta-box">
-                                        <div class="ag-timeline-card_meta">Phase 1 </div>
-                                    </div>
-                                </div>
-                                <div class="ag-timeline-card_item">
-                                    <div class="ag-timeline-card_inner">
-
-                                        <div class="ag-timeline-card_info">
-                                            <div class="ag-timeline-card_title">Phase 1 </div>
-                                            <div class="ag-timeline-card_desc">
-                                                -Drop 4,444 OG Bullies NFT <br> -Partnerships with NFT communities.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ag-timeline-card_arrow"></div>
-                                </div>
-                            </div>
-
-                            <div class="js-timeline_item ag-timeline_item">
-                                <div class="ag-timeline-card_box">
-                                    <div class="ag-timeline-card_meta-box">
-                                        <div class="ag-timeline-card_meta">Phase 2 </div>
-                                    </div>
-                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                                        <div class="ag-timeline-card_point"></div>
-                                    </div>
-                                </div>
-                                <div class="ag-timeline-card_item">
-                                    <div class="ag-timeline-card_inner">
-
-                                        <div class="ag-timeline-card_info">
-                                            <div class="ag-timeline-card_title">Phase 2 </div>
-                                            <div class="ag-timeline-card_desc">
-                                                -Drop of $OGB utility token<br> -NFT Staking<br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ag-timeline-card_arrow"></div>
-                                </div>
-                            </div>
-
-                            <div class="js-timeline_item ag-timeline_item">
-                                <div class="ag-timeline-card_box">
-                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                                        <div class="ag-timeline-card_point"></div>
-                                    </div>
-                                    <div class="ag-timeline-card_meta-box">
-                                        <div class="ag-timeline-card_meta">Phase 3 </div>
-                                    </div>
-                                </div>
-                                <div class="ag-timeline-card_item">
-                                    <div class="ag-timeline-card_inner">
-
-                                        <div class="ag-timeline-card_info">
-                                            <div class="ag-timeline-card_title">Phase 3 </div>
-                                            <div class="ag-timeline-card_desc">
-                                                -Drop Artificial Insemination NFT<br> -Breeding Season<br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ag-timeline-card_arrow"></div>
-                                </div>
-                            </div>
-
-                            <div class="js-timeline_item ag-timeline_item">
-                                <div class="ag-timeline-card_box">
-                                    <div class="ag-timeline-card_meta-box">
-                                        <div class="ag-timeline-card_meta">Phase 4 </div>
-                                    </div>
-                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                                        <div class="ag-timeline-card_point"></div>
-                                    </div>
-                                </div>
-                                <div class="ag-timeline-card_item">
-                                    <div class="ag-timeline-card_inner">
-
-                                        <div class="ag-timeline-card_info">
-                                            <div class="ag-timeline-card_title">Phase 4 </div>
-                                            <div class="ag-timeline-card_desc">
-                                                -Drop of OG Bullies Clothing Merch<br> -Launch OGB Store<br> -Registration of upcoming Live Event<br> -Submission for Pedigree Concept
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ag-timeline-card_arrow"></div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-
-    <section class="faqs" id="FAQs">
+    <section class="faqs" id="faqs" style="display:none">
         <div class="container faqs__container">
             <div class="faqs__left">
                 <h2>FAQs</h2>
@@ -263,7 +220,7 @@
                     <div class="accordion-item">
                         <a>What's The Minting Price?</a>
                         <div class="content">
-                            <p>The Minting Price will be 1.4 Sol For Public sale and Whitelist members<br> (Check the Discord channel for more infos concerning the OGlist)</p>
+                            <p>The Minting Price will be the equivalent of $200 the day of the mint.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -273,94 +230,111 @@
                         </div>
                     </div>
 
-                    <!--<div class="accordion-item">
-                        <a>What Are The Secondary Royalty Fees For NFT Holders?</a>
-                        <div class="content">
-                            <p>OG Bullies Club retains 5% royalties on secondary market sales that will be used to support the community and events.</p>
-                        </div>
-                    </div>-->
-
-                    <div class="accordion-item">
-                        <a>How And When Can I Breed My OG Bully NFT?</a>
-                        <div class="content">
-                            <p>Before each breeding season, an Artificial Insemination NFT will be ready to be minted on our Website. <br> Breeding Seasons are available on the Roadmap and will be announced in the Discord.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <a>Where Will The Bully Show Take Place?</a>
-                        <div class="content">
-                            <p>We will announce each Bully Show’s location 1 or 2 months before on Discord, so stay tuned.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="faqs__right">
-                <img src="./assets/faq.png" alt="" class="faqs-img">
+                <img src="./assets/faq.png" class="faqs-img" alt="">
             </div>
         </div>
     </section>
-
-    <section class="team" id="Team">
-        <h1>Meet the Team</h1>
-        <h3>OG Bullies is being developed by a team of experts in multiple disciplines, with an unmatched experience in Product Design and Development.</h3>
-        <div class="container team__container">
-            <ul>
-                <div class="team1">
-                    <img src="assets/karl.svg" alt="">
-                    <h4>Developper<br>
-                        <span>Pocket Bully owner</span></h4>
-                </div>
-                <div class="team2">
-                    <img src="assets/rawad.svg" alt="">
-                    <h4>Product Designer<br>
-
-                        <span>Standard Bully owner</span></h4>
-                </div>
-                <div class="team3">
-                    <img src="assets/niovi.svg" alt="">
-                    <h4>Head of Marketing<br>
-                        <span>French Bulldog owner</span> </h4>
-                </div>
-
-            </ul>
-        </div>
-
-    </section>
-
-    <section class="banner" id="banner-id">
-        <div class="container banner__container">
-            <h1>Join the OG Bullies Club</h1>
-            <a href=""><img src="assets/discord1.png" class="banner-discord" alt="">Join Discord</a> <br>
-            <img src="assets/banner-img.png" class="banner-img" alt="">
-        </div>
-
-    </section>
-
-    <section class="footer" id="footer-id">
-        <div class="container footer__container">
+    <footer>
+        <div class="upfooter"></div>
+        <div class="downfooter">
             <hr>
             <p>Copyright © OG Bullies Club | All rights reserved</p>
         </div>
-    </section>
+    </footer>
 
-
-
-
-
-
-    <script src="./script.js" type="text/javascript"></script>
-    <script>
-        const items = document.querySelectorAll(".accordion a");
-
-        function toggleAccordion() {
-            this.classList.toggle('active');
-            this.nextElementSibling.classList.toggle('active');
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("about");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
         }
 
-        items.forEach(item => item.addEventListener('click', toggleAccordion));
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+    }
+
+    function makeEaseInOut(myFunction) {
+        return function(timeFraction) {
+            if (timeFraction < .5)
+                return timing(2 * timeFraction) / 2;
+            else
+                return (2 - timing(2 * (1 - timeFraction))) / 2;
+        }
+    }
+
+    bounceEaseInOut = makeEaseInOut(bounce);
+
+    function myFunction1() {
+        var x = document.getElementById("roadmap");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+
+        } else {
+
+            x.style.display = 'none';
+
+        }
+    }
+
+    function myFunction2() {
+        var x = document.getElementById("casino");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function myFunction3() {
+        var x = document.getElementById("tokenomic");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function myFunction4() {
+        var x = document.getElementById("brand");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function myFunction5() {
+        var x = document.getElementById("ambully");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function myFunction6() {
+        var x = document.getElementById("faqs");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+    const items = document.querySelectorAll(".accordion a");
+
+    function toggleAccordion() {
+        this.classList.toggle('active');
+        this.nextElementSibling.classList.toggle('active');
+    }
+
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
 
 </html>
